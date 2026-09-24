@@ -28,6 +28,11 @@ h1 {
   -webkit-font-smoothing: antialiased;
 }
 
+/* h2, h3 のデフォルト太字を解除 */
+h1, h2, h3 {
+  font-weight: normal;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-main);
