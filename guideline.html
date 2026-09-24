@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>著作権ガイドライン - bq (ビー・キュー)</title>
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo-mark">
+  <img src="images/logo.png" alt="bq" style="height: 32px;">
+</a>
+      <nav class="header-nav">
+        <a href="index.html#appstore">App Store</a>
+        <button class="menu-btn" id="openMenuBtn" aria-label="メニューを開く">
+          <i class="ph ph-list"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 全画面メニュー -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close-btn" id="closeMenuBtn" aria-label="メニューを閉じる">
+      <i class="ph ph-x"></i>
+    </button>
+    
+    <div class="menu-content">
+      <div class="menu-birds">
+        <span style="color: #fff; font-size: 32px; line-height: 1;">🕊️</span>
+      </div>
+
+      <nav class="menu-list">
+        <a href="index.html#features" class="menu-item">主な機能と特徴</a>
+        <a href="index.html#creator" class="menu-item">作った人</a>
+        <a href="index.html#updates" class="menu-item">今後のアップデート予定</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="menu-item">要望・バグの報告</a>
+        <a href="https://buymeacoffee.com/moq.design" target="_blank" rel="noopener noreferrer" class="menu-item">コーヒーを買ってあげる</a>
+      </nav>
+
+      <a href="index.html#appstore" class="menu-app-store menu-item">App Store</a>
+      
+      <div class="menu-divider"></div>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 40px; padding-bottom: 80px;">
+    <h1 class="page-title">著作権ガイドライン</h1>
+    <p class="page-subtitle">Copyright Guidelines</p>
+
+    <div class="intro-text">
+      「bq」では、読書の中で出会った素晴らしい言葉や名言を安全に保存・共有し、読書の体験を広げるために、著作権法第32条（引用）に基づいたルールを設けています。<br>
+      本アプリでフレーズを保存・公開する際は、以下のガイドラインをご確認のうえ、正しくご利用ください。
+    </div>
+
+    <!-- 1. 「非公開メモ」と「SNS公開」の違い -->
+    <section class="guide-section">
+      <h2>1. 「非公開メモ」と「SNS公開」の違い</h2>
+      <p>本アプリでは、保存方法によって法的ルールが異なります。</p>
+
+      <div class="card-box">
+        <div class="card-box-title">
+          <i class="ph ph-lock" style="font-size: 20px;"></i>
+          非公開（自分のみ保存）
+        </div>
+        <p><strong>ルール：</strong> 感想やコメントがなくても自由に入力・保存できます。</p>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 0;"><strong>理由：</strong> 著作権法第30条（私的使用のための複製）に基づき、個人が自分のためだけに本の一節を保存・記録する行為は認められています。</p>
+      </div>
+
+      <div class="card-box">
+        <div class="card-box-title">
+          <i class="ph ph-share-network" style="font-size: 20px;"></i>
+          SNS公開（全体公開）
+        </div>
+        <p><strong>ルール：</strong> 必ずあなたの言葉（感想・コメント）または「感情・コンテキストカード（スタンプ）」を添えて投稿してください。</p>
+        <p style="color: var(--text-muted); font-size: 13px; margin-bottom: 0;"><strong>理由：</strong> 著作権法第32条（引用）の成立要件を満たすためです。</p>
+      </div>
+    </section>
+
+    <!-- 2. 公開投稿（引用）を安全に行うための3ルール -->
+    <section class="guide-section">
+      <h2>2. 公開投稿（引用）を安全に行うための3ルール</h2>
+      <p>本の一節をSNSに公開投稿（引用）する際は、アプリの仕様および以下の3つのポイントを守って投稿を作成してください。</p>
+
+      <h3>① 主従関係を保つ（自身の言葉・感情を添える）</h3>
+      <p>引用は、あなたの意見や感想（主）を補強・表現するために本の一節（従）を引いてくる行為です。本の一節のみを単体で公開投稿することは、無断転載（著作権侵害）に該当するおそれがあります。</p>
+      <p style="background: #f0f0f2; padding: 12px 16px; border-radius: 8px; font-size: 13px;">
+        <strong>対策：</strong> 投稿時には必ず短くても自身の感想を書くか、アプリで用意されている「感情スタンプ・状況タグ」を選択して投稿してください。
+      </p>
+
+      <h3 style="margin-top: 24px;">② 引用範囲は必要な「部分（短文）」にとどめる</h3>
+      <p>本の章全体、大部分、あるいは要約そのものを丸写しにして投稿することはできません。心に響いた「1〜数行のフレーズ」を中心に引用を行ってください。</p>
+      <p style="color: var(--text-muted); font-size: 13px;">※ アプリの投稿枠でも一定の文字数制限（例: 200文字程度）を設けております。</p>
+
+      <h3 style="margin-top: 24px;">③ 出所（書籍情報）を正しく表示する</h3>
+      <p>引用した文章には、必ず「書名」「著者名」などの出所（出典）を明記する必要があります。</p>
+      <p style="color: var(--text-muted); font-size: 13px;">※ 本アプリでは、バーコード読み取りやクイック選択機能により、出所情報が自動的に付与・表示されます。この自動表示を消したり改ざんしたりしないでください。</p>
+    </section>
+
+    <!-- 3. 禁止事項（違反投稿への対応） -->
+    <section class="guide-section">
+      <h2>3. 禁止事項（違反投稿への対応）</h2>
+      <p>以下のような投稿が確認された場合、運営側の判断により事前通知なく投稿の非公開化・削除やアカウント利用制限を行う場合があります。</p>
+      <ul class="guide-list">
+        <li>本の本文を大量・長文にわたり連続して投稿する行為</li>
+        <li>感想や意図を伴わず、書籍のフレーズのみを機械的・大量に公開投稿する行為</li>
+        <li>著作権者や出版社からの正規の削除要請があった投稿</li>
+      </ul>
+    </section>
+
+    <!-- 4. 著作権者・出版社の皆様へ -->
+    <section class="guide-section">
+      <h2>4. 著作権者・出版社の皆様へ</h2>
+      <p>当アプリは、読者の「刺さった言葉」を通じた合法的な引用と書籍の露出向上・購買促進（アフィリエイト連携）を目指して運営されております。</p>
+      <p>万が一、当アプリ内の投稿において権利侵害・不適切な転載等を発見された場合は、大変お手数ですが以下の権利侵害申告窓口までご連絡ください。速やかに確認のうえ、削除等の適切な対応を実施いたします。</p>
+      
+      <div class="card-box" style="margin-top: 16px;">
+        <p style="margin-bottom: 4px;"><strong>権利侵害・送信防止措置のお問い合わせ：</strong></p>
+        <p style="margin-bottom: 0;">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" style="text-decoration: underline;">お問い合わせフォーム</a> 
+          または 
+          <a href="mailto:support@moq-design.jp" style="text-decoration: underline;">support@moq-design.jp</a>
+        </p>
+      </div>
+    </section>
+
+    <div class="date-text">
+      制定日: 2026年9月6日
+    </div>
+  </main>
+
+  <!-- 共通フッター -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-mark" style="margin-bottom: 12px;">bq</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#appstore">App Store</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="credit.html">クレジット</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">開発・バグ報告</a>
+        <a href="guideline.html">著作権ガイドライン</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript: メニュー開閉制御 -->
+  <script>
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    openMenuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMenu() {
+      menuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    closeMenuBtn.addEventListener('click', closeMenu);
+    menuItems.forEach(item => item.addEventListener('click', closeMenu));
+  </script>
+
+</body>
+</html>

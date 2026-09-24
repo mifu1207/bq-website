@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>クレジット＆ライセンス - bq (ビー・キュー)</title>
+  <!-- Google Fonts & Phosphor Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <!-- 外部CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <!-- ヘッダー -->
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo-mark">bq</a>
+      <nav class="header-nav">
+        <a href="index.html#appstore">App Store</a>
+        <button class="menu-btn" id="openMenuBtn" aria-label="メニューを開く">
+          <i class="ph ph-list"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 全画面メニュー -->
+  <div class="menu-overlay" id="menuOverlay">
+    <button class="menu-close-btn" id="closeMenuBtn" aria-label="メニューを閉じる">
+      <i class="ph ph-x"></i>
+    </button>
+    
+    <div class="menu-content">
+      <div class="menu-birds">
+        <span style="color: #fff; font-size: 32px; line-height: 1;">🕊️</span>
+      </div>
+
+      <nav class="menu-list">
+        <a href="index.html#features" class="menu-item">主な機能と特徴</a>
+        <a href="index.html#creator" class="menu-item">作った人</a>
+        <a href="index.html#updates" class="menu-item">今後のアップデート予定</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer" class="menu-item">要望・バグの報告</a>
+        <a href="https://buymeacoffee.com/moq.design" target="_blank" rel="noopener noreferrer" class="menu-item">コーヒーを買ってあげる</a>
+      </nav>
+
+      <a href="index.html#appstore" class="menu-app-store menu-item">App Store</a>
+      
+      <div class="menu-divider"></div>
+    </div>
+  </div>
+
+  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <!-- クレジット＆ライセンス -->
+    <section class="section">
+      <h2>クレジット＆ライセンス</h2>
+      <p>本アプリで表示・検索される書籍情報および画像データは、以下のサービスを利用して提供されています。</p>
+      <p><strong>楽天ウェブサービス（Rakuten Developers）</strong></p>
+      <p class="brand-power">Powered by Rakuten</p>
+      <p>本アプリは楽天ウェブサービス（Rakuten Developers）のAPIを利用して書籍情報・検索データを取得しています。</p>
+    </section>
+
+    <!-- アフィリエイトプログラムについて -->
+    <section class="section">
+      <h2>アフィリエイトプログラムについて</h2>
+      <p>本アプリは「楽天アフィリエイト」をはじめとする各種アフィリエイトプログラムに参加しています。アプリ内の書籍紹介リンク（楽天ブックス等へのボタン）を経由して商品が購入された場合、アプリ運営者が適正な紹介料を得る場合があります。これにより得られた収益は、アプリの機能改善やサーバー維持費に充てられます。</p>
+    </section>
+
+    <!-- オープンソースライセンス -->
+    <section class="section">
+      <h2>オープンソースライセンス（OSS License）</h2>
+      <p>本アプリでは、以下のオープンソースソフトウェアおよびライブラリを使用しています。各ソフトウェアのライセンス条項に基づき権利表記を行います。</p>
+      <ul>
+        <li>React Native / Expo (MIT License)</li>
+        <li>Supabase Client (MIT License)</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- 共通フッター -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo-mark" style="margin-bottom: 12px;">bq</div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#appstore">App Store</a>
+        <a href="terms.html">利用規約</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="credit.html">クレジット</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">開発・バグ報告</a>
+        <a href="guideline.html">著作権ガイドライン</a>
+      </div>
+    </div>
+  </footer>
+
+<!-- JavaScript: メニュー開閉制御 -->
+  <script>
+    const openMenuBtn = document.getElementById('openMenuBtn');
+    const closeMenuBtn = document.getElementById('closeMenuBtn');
+    const menuOverlay = document.getElementById('menuOverlay');
+    const menuItems = document.querySelectorAll('.menu-item');
+
+    openMenuBtn.addEventListener('click', () => {
+      menuOverlay.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    function closeMenu() {
+      menuOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    closeMenuBtn.addEventListener('click', closeMenu);
+    menuItems.forEach(item => item.addEventListener('click', closeMenu));
+  </script>
+
+
+</body>
+</html>
