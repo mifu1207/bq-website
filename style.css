@@ -65,12 +65,11 @@ header {
 }
 
 .logo-mark {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 20px;
   background: #000;
   color: #fff;
   padding: 4px 8px;
-  border-radius: 6px;
   display: inline-block;
   line-height: 1;
 }
@@ -171,7 +170,7 @@ header {
 
 .menu-list a {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 300;
   color: var(--text-main);
   transition: opacity 0.2s;
 }
@@ -187,7 +186,7 @@ header {
   padding: 14px 48px;
   border-radius: 30px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 300;
   margin-top: 8px;
 }
 
@@ -300,7 +299,7 @@ header {
 
 .section-title {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 16px;
   letter-spacing: -0.2px;
 }
@@ -334,7 +333,7 @@ header {
 
 .feature-title {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 8px;
 }
 
@@ -392,7 +391,7 @@ header {
 
 .profile-name {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 4px;
 }
 
@@ -461,7 +460,7 @@ header {
    ========================================================================== */
 .page-title {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 8px;
   letter-spacing: -0.2px;
 }
@@ -490,7 +489,7 @@ header {
 
 .guide-section h2 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 16px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--text-main);
@@ -498,7 +497,7 @@ header {
 
 .guide-section h3 {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 300;
   margin: 20px 0 8px;
 }
 
@@ -518,7 +517,7 @@ header {
 }
 
 .card-box-title {
-  font-weight: 700;
+  font-weight: 300;
   font-size: 15px;
   margin-bottom: 8px;
   display: flex;
