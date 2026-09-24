@@ -102,43 +102,48 @@
     </section>
   </main>
 
-  <!-- 共通フッター -->
-  <footer>
-    <div class="container footer-content">
-      <div class="footer-brand">
-        <div class="logo-mark" style="margin-bottom: 12px;">bq</div>
-      </div>
-      <div class="footer-links">
-        <a href="index.html#appstore">App Store</a>
-        <a href="terms.html">利用規約</a>
-        <a href="privacy.html">プライバシーポリシー</a>
-        <a href="credit.html">クレジット</a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeSj87kBMLcoZ9scpc-lLzK-MN2QImrvjqi6t_wVraC_X-3lA/viewform?usp=dialog" target="_blank" rel="noopener noreferrer">開発・バグ報告</a>
-        <a href="guideline.html">著作権ガイドライン</a>
-      </div>
-    </div>
-  </footer>
-<!-- JavaScript: メニュー開閉制御 -->
+  <!-- 共通フッター読み込み領域 -->
+  <div id="footer-area"></div>
+
+  <!-- 共通パーツの読み込み＆メニューイベント登録スクリプト -->
   <script>
-    const openMenuBtn = document.getElementById('openMenuBtn');
-    const closeMenuBtn = document.getElementById('closeMenuBtn');
-    const menuOverlay = document.getElementById('menuOverlay');
-    const menuItems = document.querySelectorAll('.menu-item');
+    // 共通ヘッダーの読み込み
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-area').innerHTML = data;
+        
+        // ヘッダーが読み込まれた後にメニュー制御の処理をセット
+        const openMenuBtn = document.getElementById('openMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+        const menuOverlay = document.getElementById('menuOverlay');
+        const menuItems = document.querySelectorAll('.menu-item');
 
-    openMenuBtn.addEventListener('click', () => {
-      menuOverlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
+        if (openMenuBtn && menuOverlay) {
+          openMenuBtn.addEventListener('click', () => {
+            menuOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+          });
+        }
 
-    function closeMenu() {
-      menuOverlay.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+        function closeMenu() {
+          if (menuOverlay) {
+            menuOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+          }
+        }
 
-    closeMenuBtn.addEventListener('click', closeMenu);
-    menuItems.forEach(item => item.addEventListener('click', closeMenu));
+        if (closeMenuBtn) closeMenuBtn.addEventListener('click', closeMenu);
+        menuItems.forEach(item => item.addEventListener('click', closeMenu));
+      });
+
+    // 共通フッターの読み込み
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-area').innerHTML = data;
+      });
   </script>
-
 
 </body>
 </html>
