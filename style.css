@@ -97,7 +97,11 @@ ul {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 80px 24px 0;
+  padding: 0 24px;
+}
+
+main.container {
+  padding-top: 80px;
 }
 
 
