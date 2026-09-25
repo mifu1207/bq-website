@@ -100,6 +100,10 @@ ul {
   padding: 0 24px;
 }
 
+main {
+  margin-top: 80px; /* ヘッダーの高さ＋適度な余白 */
+}
+
 header {
   position: fixed;        /* sticky から fixed に変更 */
   top: 0;
@@ -112,18 +116,6 @@ header {
   z-index: 1000;          /* 他の要素より手前に表示 */
   border-bottom: 1px solid var(--border-color);
 }
-
-/*
-header {
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  background-color: rgba(247, 247, 248, 0.9);
-  backdrop-filter: blur(8px);
-  z-index: 100;
-  border-bottom: 1px solid var(--border-color);
-}
-  */
 
 .header-inner {
   display: flex;
@@ -160,7 +152,7 @@ header {
 .header-nav a {
   display: inline-flex;
   align-items: center;
-  line-height: 1;      /* 余分な行高を消して位置を安定させる */
+  line-height: 1;
 }
 
 .back-link {
