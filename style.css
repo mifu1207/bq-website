@@ -374,7 +374,7 @@ header {
   padding-left: 20px;
   margin-bottom: 8px;
   font-size: 16px;
-  color: #090809;
+  color: var(--text-muted);
 }
 
 .custom-list li:last-child {
