@@ -532,6 +532,7 @@ footer {
   text-decoration: underline;
 }
 
+
 @media (max-width: 600px) {
   .features-grid {
     grid-template-columns: 1fr;
@@ -539,8 +540,10 @@ footer {
   .footer-content {
     flex-direction: column;
   }
+  /*
   .hero-sub {
     text-align: left;
     display: inline-block;
   }
+  */
 }
