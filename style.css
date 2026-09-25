@@ -408,10 +408,10 @@ header {
 
 .tag {
   font-size: 12px;
-  background: #CDD7D6;
+  background: #F5F7F7;
   padding: 4px 10px;
   border-radius: 99px;
-  border-color: #8EA6A5;
+  brder: 1px solid #8EA6A5;  
   color: #6B6B6B;
 }
 
