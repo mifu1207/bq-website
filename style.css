@@ -38,6 +38,7 @@ h2 {
   -webkit-font-smoothing: antialiased;
   font-weight:300;
   padding-bottom: 8px
+  padding-top: 16px;
 }
 
 h3 {
@@ -48,6 +49,7 @@ h3 {
   -webkit-font-smoothing: antialiased;
   font-weight:300;
   padding-bottom: 8px;
+  padding-top: 16px;
 }
 
 p {
