@@ -539,4 +539,8 @@ footer {
   .footer-content {
     flex-direction: column;
   }
+  .hero-sub {
+    text-align: left;
+    display: inline-block;
+  }
 }
