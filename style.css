@@ -6,7 +6,7 @@
   --card-bg: #ffffff;
   --text-main: #090809;
   --text-muted: #6B6B6B;
-  --border-color: #e5e5e7;
+  --border-color: #8EA6A5;
   --green: #436B69;
   --max-width: 680px;
   
@@ -426,9 +426,9 @@ header {
   font-size: 12px;
   background: #F5F7F7;
   padding: 4px 10px;
-  border-radius: 99px;
-  brder: 1px solid #8EA6A5;  
-  color: #6B6B6B;
+  border-radius: 50%;
+  brder: 1px solid (--border-color);  
+  color: var(--text-muted);
 }
 
 .btn-secondary {
