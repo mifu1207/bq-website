@@ -101,6 +101,20 @@ ul {
 }
 
 header {
+  position: fixed;        /* sticky から fixed に変更 */
+  top: 0;
+  left: 0;
+  width: 100%;            /* 横幅いっぱいに広げる */
+  padding: 16px 0;
+  background-color: rgba(247, 247, 248, 0.9);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px); /* Safari対応 */
+  z-index: 1000;          /* 他の要素より手前に表示 */
+  border-bottom: 1px solid var(--border-color);
+}
+
+/*
+header {
   padding: 20px 0;
   position: sticky;
   top: 0;
@@ -109,6 +123,7 @@ header {
   z-index: 100;
   border-bottom: 1px solid var(--border-color);
 }
+  */
 
 .header-inner {
   display: flex;
