@@ -97,12 +97,9 @@ ul {
   width: 100%;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 80px 24px 0;
 }
 
-main {
-  padding-top: 80px; /* ヘッダーの高さ＋適度な余白 */
-}
 
 header {
   position: fixed;        /* sticky から fixed に変更 */
