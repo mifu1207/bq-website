@@ -273,7 +273,6 @@ header {
   margin-bottom: 28px;
 }
 
-
 .app-store-btn {
   display: inline-flex;
   align-items: center;
@@ -333,15 +332,14 @@ header {
 .features-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
   margin-top: 32px;
 }
 
 .feature-item {
   background: var(--card-bg);
   padding: 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(0,0,0,0.04);
+  border-radius: 16px;;
 }
 
 .feature-icon {
@@ -350,14 +348,8 @@ header {
   color: var(--green);
 }
 
-.feature-title {
-  font-size: 15px;
-  font-weight: 300;
-  margin-bottom: 8px;
-}
-
-.feature-text {
-  font-size: 13px;
+.small-text {
+  font-size: 14px;
   color: var(--text-muted);
   line-height: 1.7;
 }
