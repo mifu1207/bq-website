@@ -54,7 +54,7 @@ h3 {
 }
 
 p {
-  color: var(--text-main);
+  color: var(--text-muted);
   font-family: var(--font-sans);
   line-height: 1.8;
   font-size: 16px;
