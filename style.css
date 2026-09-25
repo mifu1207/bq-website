@@ -431,8 +431,9 @@ header {
   font-size: 12px;
   background: #F5F7F7;
   padding: 4px 10px;
-  border-radius: 50%;
-  brder: 1px solid (--border-color);  
+  border-radius: 99px;
+  border: 1px solid;
+  border-color: var(--border-color);
   color: var(--text-muted);
 }
 
