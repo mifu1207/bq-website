@@ -273,13 +273,6 @@ header {
   margin-bottom: 28px;
 }
 
-.hero-desc {
-  font-size: 14px;
-  color: var(--text-muted);
-  max-width: 500px;
-  margin: 0 auto 32px;
-  line-height: 1.9;
-}
 
 .app-store-btn {
   display: inline-flex;
