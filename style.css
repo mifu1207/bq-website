@@ -154,11 +154,17 @@ header {
   display: flex;
   gap: 16px;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
+}
+
+.header-nav a {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;      /* 余分な行高を消して位置を安定させる */
 }
 
 .back-link {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
   display: flex;
   align-items: center;
@@ -176,7 +182,10 @@ header {
   font-size: 24px;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--text-main);
+  padding: 0;          /* 余計な余白をカット */
+  line-height: 1;
 }
 
 /* 全画面メニュー */
