@@ -310,7 +310,7 @@ header {
   font-size: 14px;
   font-weight: 600;
   transition: opacity 0.2s;
-  margin-top: 32px;
+  margin-top: 32px 0 16px 0;
 }
 
 .app-store-btn:hover {
