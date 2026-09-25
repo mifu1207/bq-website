@@ -284,6 +284,7 @@ header {
   font-size: 14px;
   font-weight: 600;
   transition: opacity 0.2s;
+  margin-top: 32px;
 }
 
 .app-store-btn:hover {
