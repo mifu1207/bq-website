@@ -114,7 +114,6 @@ header {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); /* Safari対応 */
   z-index: 1000;          /* 他の要素より手前に表示 */
-  border-bottom: 1px solid var(--border-color);
 }
 
 .header-inner {
