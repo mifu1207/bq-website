@@ -312,17 +312,6 @@ header {
 /* ==========================================================================
    4. 各種セクション・カード要素
    ========================================================================== */
-.section {
-  margin-bottom: 60px;
-  Margin-top:60px;
-}
-
-.section-title {
-  font-size: 20px;
-  font-weight: 300;
-  margin-bottom: 16px;
-  letter-spacing: -0.2px;
-}
 
 .section-desc {
   color: var(--text-muted);
