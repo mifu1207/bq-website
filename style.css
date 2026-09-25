@@ -10,7 +10,7 @@
   --border-color: #e5e5e7;
   --max-width: 680px;
   
-  --font-serif: 'Baskervville', Baskerville, 'Baskerville Old Face', 'Garamond', serif;
+  --font-serif: 'Helvetica', Baskerville, 'Baskerville Old Face', 'Garamond', serif;
   --font-sans: Helvetica, Arial, 'Helvetica Neue', 'Noto Sans JP', sans-serif;
 }
 
@@ -226,14 +226,9 @@ header {
   padding: 40px 0 60px;
 }
 
-.hero-birds {
-  font-size: 48px;
-  margin-bottom: 12px;
-  line-height: 1;
-}
-
 .hero-title {
   font-family: var(--font-serif);
+  font-weight: 300;
   font-size: 42px;
   font-style: italic;
   letter-spacing: 1px;
