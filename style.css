@@ -416,19 +416,6 @@ header {
   overflow: hidden;
 }
 
-.profile-name {
-  font-size: 16px;
-  font-weight: 300;
-  margin-bottom: 4px;
-}
-
-.profile-bio {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 16px;
-  line-height: 1.7;
-}
-
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -489,15 +476,15 @@ header {
 
 .card-box {
   background: var(--card-bg);
-  padding: 20px;
-  border-radius: 12px;
+  padding: 24px;
+  border-radius: 16px;
   border: 1px solid rgba(0,0,0,0.04);
   margin-bottom: 16px;
 }
 
 .card-box-title {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
@@ -507,7 +494,7 @@ header {
 
 .date-text {
   text-align: right;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
   margin-top: 40px;
 }
