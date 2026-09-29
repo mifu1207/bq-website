@@ -17,7 +17,7 @@
 <body>
 
   <!-- 共通ヘッダー読み込み領域 -->
-  <div id="/header-area"></div>
+  <div id="header-area"></div>
 
 
   <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
@@ -105,7 +105,7 @@
   <!-- 共通パーツの読み込み＆メニューイベント登録スクリプト -->
   <script>
     // 共通ヘッダーの読み込み
-    fetch('header.html')
+    fetch('/header.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('header-area').innerHTML = data;
