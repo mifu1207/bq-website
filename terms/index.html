@@ -12,11 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/@phosphor-icons/web"></script>
   <!-- 外部CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <!-- 共通ヘッダー読み込み領域 -->
-  <div id="header-area"></div>
+  <div id="/header-area"></div>
 
   <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
     <section class="section">
@@ -140,7 +140,7 @@
       });
 
     // 共通フッターの読み込み
-    fetch('footer.html')
+    fetch('/footer.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('footer-area').innerHTML = data;
